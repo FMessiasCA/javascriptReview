@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #F898F2;
+    color: #1b011a;
+
+    font-size: 2.4rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.3rem;
+    margin-top: 3.2rem;
+
+    text-align: center
+}
+
+button {
+    background-color: #1b011a;
+    color: #F898F2;
+
+    padding: 0.8rem;
+    margin: 0.4rem;
+
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #F898F2;
+    color: #1b011a;
+    border-color: #73266e;
+}
+
+#Lesson2 {
+    & form input {
+        width: 4.8rem;
+        height: 3.2rem;
+        padding: 0.8rem;
+    }
+}
