@@ -49,3 +49,25 @@ subtraction.addEventListener('click', (event) => {
 
     return showSubtraction.innerText =  0 < sumTotal && sumTotal < 9 ? '0' + sumTotal : sumTotal;
 })
+
+// Crie um script que declare duas variáveis e exiba o resultado da divisão entre elas.
+//Crie um script que declare uma variável e verifique se o seu valor é um número par. Se for, exiba a mensagem "É um número par", caso contrário, exiba a mensagem "Não é um número par".
+const division = document.getElementById('division');
+
+division.addEventListener('click', (event) => {
+    event.preventDefault();
+
+    const numberA = document.querySelector('#Lesson8_9 #numberA').value;
+    const numberB = document.querySelector('#Lesson8_9 #numberB').value;
+    const showDivision = document.getElementById('showDivision');
+
+    const sumTotal = Number(numberA) / Number(numberB);
+
+    const oddOrEven = Number(numberA) % Number(numberB);
+    
+    if (oddOrEven == 0) {
+        return showDivision.innerText =  `${sumTotal.toFixed(1)} and is a even number`;
+    } else {
+        return showDivision.innerText =  `${sumTotal.toFixed(1)} and is a odd number`;
+    };
+})
