@@ -46,6 +46,11 @@ button:hover {
     border-color: #73266e;
 }
 
+span {
+    color: #ad2222;
+    font-weight: bold;
+}
+
 #Lesson2 {
     & form input {
         width: 4.8rem;
